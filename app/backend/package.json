@@ -2,9 +2,11 @@
   "name": "todolist-backend",
   "version": "1.0.0",
   "description": "Project TodoList - Backend",
-  "main": "index.js",
+  "main": "./build/server",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ./src --ext .ts",
+    "build": "/bin/sh tsc_eval.sh"
   },
   "keywords": [],
   "author": "Antonio Carlos, João Paulo e Valdênio Martinho",
@@ -21,10 +23,13 @@
     "@types/sequelize": "^4.28.13",
     "@typescript-eslint/eslint-plugin": "^5.25.0",
     "@typescript-eslint/parser": "^5.25.0",
-    "eslint": "^8.15.0",
+    "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-airbnb-typescript": "^15.0.0",
+    "eslint-plugin-mocha": "^10.0.4",
+    "eslint-plugin-sonarjs": "^0.13.0",
     "nodemon": "^2.0.16",
+    "sequelize-cli": "^6.4.1",
     "ts-node": "^10.7.0",
     "ts-node-dev": "^1.1.8",
     "typescript": "^4.6.4"
